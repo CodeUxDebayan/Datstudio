@@ -10,13 +10,13 @@
 </head>
 
 <body>
-
+<div class="all">
     <!-- Header Section -->
-    <header class="header">
+    <div class="header">
         <div class="logo"><a href="./index.html">DATSTUDIO</a></div>
         <nav>
             <ul class="nav-list">
-                <li><a href="#hero">Home</a></li>
+                <li><a href="./index.html#hero">Home</a></li>
                 <li><a href="#collections">Collections</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -24,7 +24,20 @@
             </ul>
         </nav>
         <div class="contact-link"><a href="#news">Contact Us</a></div>
-    </header>
+        <i id="menu" class="fa-solid fa-bars"></i>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="./index.html#hero">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#news">Contact Us</a></li>
+        </ul>
+    </div>
+    
     <div class="hero-images">
         <img src="./images/mic.jpg" alt="Microphone" class="hero-img mic">
         <img src="./images/studio.jpg" alt="Studio Setup" class="hero-img studio">
@@ -45,7 +58,7 @@
         </a>
     </div>
     <!-- Info Section -->
-    <section class="info-section" id="about">
+    <div class="info-section" id="about">
         <p>
             <span><svg height="15" width="300" xmlns="http://www.w3.org/2000/svg">
                     <line x1="0" y1="10" x2="250" y2="10" style="stroke:rgb(255, 255, 255);stroke-width:5;" />
@@ -56,10 +69,10 @@
         <h2>DATSTUDIO was founded by musicians, for musicians. Our goal has always been to offer a professional space where artists can freely create without boundaries.</h2>
         <p class="info-text"><a href="./about.html" style="color: white; text-decoration: none;">See More...</a></p>
         <img src="./images/info-image.jpg" alt="Studio Setup" class="info-img">
-    </section>
+    </div>
 
     <!-- Blog Section -->
-    <section class="blog-section" id="blog">
+    <div class="blog-section" id="blog">
         <h2>Explore. Weekly Blogs.</h2>
         <div class="blog-preview">
             <div class="blog-image">
@@ -75,10 +88,10 @@
             </div>
             
         </div>
-    </section>
+    </div>
 
     <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <div class="faq" id="faq">
         <h2>FAQ</h2>
         <div class="faq-items">
         <p>Have a question? Look here.</p>
@@ -104,9 +117,9 @@
             </svg>
         </div>
     </div>
-    </section>
+    </div>
     <!--Gallery Section-->
-    <section class="gallery-section" id="collections">
+    <div class="gallery-section" id="collections">
         <h1>Our Collections</h1>
         <div class="gallery-container">
           <div class="gallery-item">
@@ -119,7 +132,7 @@
             <img src="images/collection3.jpg" alt="Collection 3">
           </div>
         </div>
-      </section>
+      </div>
 
     <!-- Lightbox for Full Image -->
   <div id="lightbox" class="lightbox">
@@ -128,13 +141,13 @@
     <div id="lightbox-caption"></div>
   </div>
     <!-- Newsletter Section -->
-    <section class="newsletter" id="news">
+    <div class="newsletter" id="news">
         <h2>You Need </br>The Newsletter</h2>
         <form>
             <input type="email" placeholder="Your email">
             <button type="submit">Submit</button>
         </form>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -148,6 +161,7 @@
             </ul>
         </nav>
     </footer>
+</div>
 
     <script src="index.js"></script>
 </body>
