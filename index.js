@@ -1,3 +1,6 @@
+
+AOS.init();
+
 // FAQ Toggle
 document.querySelectorAll('.faq-item h5').forEach(item => {
     item.addEventListener('click', () => {
